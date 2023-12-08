@@ -4,14 +4,11 @@ import { FeedbackOptions } from './FeedbackОptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      good: 0,
-      neutral: 0,
-      bad: 0,
-    };
-  }
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
 
   leaveFeedback = (option) => {
     this.setState((prevState) => ({
